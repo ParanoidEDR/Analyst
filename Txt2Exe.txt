@@ -1,0 +1,3 @@
+[string]$hex = get-content -path C:\Users\hacker2\Desktop\HexPutty.txt
+[Byte[]] $temp = $hex -split ' '
+[System.IO.File]::WriteAllBytes("C:\Users\hacker2\Desktop\Putty.exe", $temp)
